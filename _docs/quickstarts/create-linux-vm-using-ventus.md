@@ -6,20 +6,18 @@ tags: [featured, quickstart]
 ---
 
 # How to create Linux VM in Ventus Cloud
-
 {: .no_toc }
+---
 
 {% include alert.html type="info" title="Ventus virtual machines (VMs) can be created through the Ventus portal" content="The Ventus portal is a browser-based user interface to create VMs and their associated resources. This quickstart shows you how to use the Ventus portal to deploy a Linux virtual machine (VM) running ubuntu-server-18.04." %}
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ## Create new instance
-
 ---
 
 {% include alert.html type="info" title="Instances are virtual machines that run inside the cloud."%}
@@ -73,7 +71,6 @@ For creating new instance do the following:
 ![](../../assets/img/new-linux-vm-V/001.gif)
 
 ## View instance details
-
 ---
 
 {% include alert.html type="info" title="To find more details about your instance" content="just click on instance box from Instance page. A new page will open and here you’ll find all details about your instance" %}
@@ -92,7 +89,6 @@ Instance details area:
 ![](../../assets/img/new-linux-vm-V/instances-Ventus7.png)
 
 ## Search for an instance
-
 ---
 
 To search for an instance, type your instance name in the search box from the top of the instance page.
@@ -100,7 +96,6 @@ To search for an instance, type your instance name in the search box from the to
 ![](../../assets/img/new-linux-vm-V/instances-Ventus8.png)
 
 ## Start / Shutdown / Reboot instance
-
 ---
 
 There are two ways in interface for **Start / Shutdown / Restart** your instance:
@@ -114,7 +109,6 @@ Second way is from instance details (click on the instance you want)and there yo
 ![](../../assets/img/new-linux-vm-V/instances-Ventus10.png)
 
 ## Login into console
-
 ---
 
 You can launch the web-console window directly from instance page or from instance details. Click on the icon _<>_ for launching the web-console.  
@@ -126,45 +120,44 @@ ssh <IP of instance>
 ```
 
 ## Configure keyboard
-
 ---
 
-Linux VMs (in our case it's Ubuntu 18.04) come with many keyboard layouts that you can choose from depending on the Language and region. The default language is `us` but you can change it if you need.
-Keyboard Layout is based on the following parameters XKB parameters, found in `/etc/default/keyboard` file. By default it looks like shown below:  
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_1.png)
+Linux VMs (in our case it's Ubuntu 18.04) come with many keyboard layouts that you can choose from depending on the Language and region. The default language is `us` but you can change it if you need.  
 
-- **XkbModel** - This parameter defines the XKB model name. The default is `pc105`;
-- **XkbLayout** - This attribute specifies the XKB keyboard model name, more specifically the Country & Language type of the keyboard. The default language is `us`;
-- **XkbVariant** - This defines the variant components of XKB keyboard. These are used in further specifying the layout details.
-- **XkbOptions** - This specifies the keyboard's extra functionalities or options such as the behavior of special keys e.g SHIFT, CTRL, ALT, ESC etc.
+Keyboard Layout is based on the following parameters XKB parameters, found in `/etc/default/keyboard` file. By default it looks like shown below:    
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_1.png)  
 
-**Temporarily Configure keyboard**
+- **XkbModel** - This parameter defines the XKB model name. The default is `pc105`;  
+- **XkbLayout** - This attribute specifies the XKB keyboard model name, more specifically the Country & Language type of the keyboard. The default language is `us`;  
+- **XkbVariant** - This defines the variant components of XKB keyboard. These are used in further specifying the layout details.  
+- **XkbOptions** - This specifies the keyboard's extra functionalities or options such as the behavior of special keys e.g SHIFT, CTRL, ALT, ESC etc.  
+
+
+**Temporarily Configure keyboard**  
 _If you wish to configure, for example, the German keyboard for the current session only, run:_
-
 ```
 dpkg-reconfigure keyboard-configuration
 ```
 
-This opens a screen with a list of possible keyboard layouts. You need to choose `Generic 105-key PC (Intl)` as shown below:
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_2.png)
+This opens a screen with a list of possible keyboard layouts. You need to choose `Generic 105-key PC (Intl)` as shown below:  
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_2.png)  
 
-Next, you'll be required to select the Language and Country, choose here `Switzerland`:  
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_3.png)
+Next, you'll be required to select the Language and Country, choose here `Switzerland`:    
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_3.png)  
 
 Select Matching keyboard - we recommend `Switzerland - German (Switzerland, no dead keys)`:  
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_4.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_4.png)  
 
-On the next step we recommend to select `The default for the keyboard layout`:  
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_5.png)
+On the next step we recommend to select `The default for the keyboard layout`:    
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_5.png)  
 
 And on the last step here we choose `No compose key`:  
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_6.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_6.png)  
 
 Now your keyboard is configured and your `/etc/default/keyboard` file looks like below:
-![](../../assets/img/new-linux-vm-V/instances-Ventus-add_7.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus-add_7.png)  
 
 ## Manage an instance
-
 ---
 
 The icon **More** is responsible for managing an instance
@@ -179,7 +172,6 @@ So whith this icon **More**, you can:
 ![](../../assets/img/new-linux-vm-V/instances-Ventus12.png)
 
 ## Delete instance
-
 ---
 
 If you want to delete an instance click the icon **More** and select **Delete**

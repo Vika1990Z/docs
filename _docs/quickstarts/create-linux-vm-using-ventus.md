@@ -124,7 +124,7 @@ ssh <IP of instance>
 
 Linux VMs (in our case it's Ubuntu 18.04) come with many keyboard layouts that you can choose from depending on the Language and region. The default language is `us` but you can change it if you need.  
 
-Keyboard Layout is based on the following parameters XKB parameters, found in `/etc/default/keyboard` file. By default it looks like shown below:    
+Keyboard Layout is based on the following XKB parameters, found in `/etc/default/keyboard` file. By default it looks like shown below:    
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_1.png)  
 
 - **XkbModel** - This parameter defines the XKB model name. The default is `pc105`;  
@@ -133,25 +133,25 @@ Keyboard Layout is based on the following parameters XKB parameters, found in `/
 - **XkbOptions** - This specifies the keyboard's extra functionalities or options such as the behavior of special keys e.g SHIFT, CTRL, ALT, ESC etc.  
 
 
-**Temporarily Configure keyboard**  
-_If you wish to configure, for example, the German keyboard for the current session only, run:_
+**Configure keyboard**  
+_If you wish to configure keyboard, run:_
 ```
 dpkg-reconfigure keyboard-configuration
 ```
 
-This opens a screen with a list of possible keyboard layouts. You need to choose `Generic 105-key PC (Intl)` as shown below:  
+This opens a screen with a list of possible keyboard layouts as shown below:  
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_2.png)  
 
-Next, you'll be required to select the Language and Country, choose here `Switzerland`:    
+Next, you'll be required to select the Language and Country:    
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_3.png)  
 
-Select Matching keyboard - we recommend `Switzerland - German (Switzerland, no dead keys)`:  
+Select Matching keyboard:  
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_4.png)  
 
-On the next step we recommend to select `The default for the keyboard layout`:    
+On the next step select key to function as AltGr:    
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_5.png)  
 
-And on the last step here we choose `No compose key`:  
+And on the last step choose compose key:  
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_6.png)  
 
 Now your keyboard is configured and your `/etc/default/keyboard` file looks like below:

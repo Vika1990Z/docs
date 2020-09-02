@@ -133,8 +133,7 @@ Keyboard Layout is based on the following XKB parameters, found in `/etc/default
 - **XkbOptions** - This specifies the keyboard's extra functionalities or options such as the behavior of special keys e.g SHIFT, CTRL, ALT, ESC etc.  
 
 
-**Configure keyboard**  
-_If you wish to configure keyboard, run:_
+_If you wish to change the keyboard configuration, run:_
 ```
 dpkg-reconfigure keyboard-configuration
 ```

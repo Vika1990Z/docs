@@ -10,7 +10,7 @@
       children:
  #       - title: "Creating a new account"
  #         url: "docs/quickstarts/create-account"  
-        - title: "SSH Keys"
+        - title: "SSH Keypairs"
           url: "docs/quickstarts/ssh-keypairs"   
 
         - title: "Linux Virtual Machines"

@@ -1,13 +1,13 @@
 ---
 title: SSH Keypairs
-description: How to generate a new SSH Keypairs 
+description: How to generate and manage a new SSH Keypairs in Ventus Cloud Portal
 tags: [ featured, coretasks ]
 # permalink: /ssh-keys/
 ---
-# SSH Keypairs
+# SSH Keypairs 
 {: .no_toc }
 ---
-In this page, you can find an explanation of how to generate a new SSH Keypairs, as well as how to use and manage it in Ventus Cloud Portal.
+On this page, you can find an explanation of how to generate a new SSH Keypairs, as well as how to use and manage it in Ventus Cloud Portal.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -46,8 +46,8 @@ On this page you can find all created SSH Keypairs with their details area.
 To create a new SSH Keypairs go to the *Keypairs page* and  click the `CREATE` icon in the the upper right corner.    
 ![](../../assets/img/ssh-key/ssh-key4.png)      
 
-*On the next page you need:*  
-1) to fill the next fields:   
+*On the next page you need:*    
+1) to fill the next fields:     
     `Name`: in this field you set a name for the Keypair;    
     `Region`: here you specify which region this Keypair will belong to.    
 
@@ -79,5 +79,7 @@ To remove a SSH Keypair you need:
 ![](../../assets/img/ssh-key/ssh-key8.png)  
 
 After confirming your action on the next page, the selected SSH Keypair will be deleted.  
-![](../../assets/img/ssh-key/ssh-key10.png)
+    ![](../../assets/img/ssh-key/ssh-key10.png)
 
+You can also select several Keypairs and remove them with one click on the corresponding `quick action` icon that appears at the top of the page after selecting the appropriate Keypairs:  
+    ![](../../assets/img/ssh-key/ssh-key11.png)

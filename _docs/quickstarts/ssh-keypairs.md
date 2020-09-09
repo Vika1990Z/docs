@@ -41,7 +41,7 @@ On this page you can find all created SSH Keypairs with their details area.
 `option list icon`: Opens a list of available management actions for the selected Keypair.  
 ![](../../assets/img/ssh-key/ssh-key3.png)    
 
-## Create a new SSH Keypair
+## Create a new Keypair
 
 To create a new SSH Keypair go to the *Keypairs page* and  click the `CREATE` icon in the the upper right corner.    
 ![](../../assets/img/ssh-key/ssh-key4.png)      

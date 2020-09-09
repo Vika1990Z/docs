@@ -12,7 +12,7 @@ description: Ventus Cloud Platform Quick Start Tasks
 <div class="section-index">
     <hr class="panel-line">
     {% for post in site.docs  %}        
-    {% if post.tags contains "quickstart" %}
+    {% if post.tags contains "quickstarts" %}
     <div class="entry">
     <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
     <p>{{ post.description }}</p>

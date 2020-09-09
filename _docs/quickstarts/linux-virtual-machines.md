@@ -1,15 +1,14 @@
 ---
-title: Creating a new Linux VM using Ventus Cloud
-description: How to create Linux VM in Ventus Cloud
-tags: [featured, quickstart]
-# permalink: /new-Linux-VM-using-Ventus-Cloud/
+title: Linux Virtual Machines
+description: How to create and manage Linux Virtual Machine in Ventus Cloud Portal
+tags: [featured, quickstarts]
+# permalink: /linux-virtual-machines/
 ---
 
-# How to create Linux VM in Ventus Cloud
+# Linux Virtual Machines 
 {: .no_toc }
 ---
-
-{% include alert.html type="info" title="Ventus virtual machines (VMs) can be created through the Ventus portal" content="The Ventus portal is a browser-based user interface to create VMs and their associated resources. This quickstart shows you how to use the Ventus portal to deploy a Linux virtual machine (VM) running ubuntu-server-18.04." %}
+On this page, you can find an explanation of how to create and manage Linux Virtual Machine in Ventus Cloud Portal.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -17,24 +16,28 @@ tags: [featured, quickstart]
 1. TOC
 {:toc}
 
-## Create new instance
----
+## Open the Virtual Machines page
 
-{% include alert.html type="info" title="Instances are virtual machines that run inside the cloud."%}
+You have to ways how to get to the *Virtual Machines page*:
+
+`First one:` **Through the *Home Page*:**    
+On the *Homepage* you can see 5 blocks, each of which contains information about the main services provided by Ventus Cloud.    
+You need to select the block named *Virtual Machines* and click `Go to Virtual Machines`. And this action will redirect you to the *Virtual Machines page*.  
+![](../../assets/img/virtual-machines/vm1.png)    
 
 For creating new instance do the following:
 
 1. On the main Navigation Panel go to **Cloud**, choose **Instances** and click the plus (+) button from at the bottom-right of the screen.
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus1.png)
-![](../../assets/img/new-linux-vm-V/instances-Ventus0.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus1.png)  
+![](../../assets/img/new-linux-vm-V/instances-Ventus0.png)  
 
 2. On the following page fill in these fields:
 
 - _Instance Name_:
   This will set the name in the Ventus database. The hostname inside the instance will not be set.(eg. "Test1")
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus2.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus2.png)  
 
 - _Select a Boot source_:
   Select the image to boot from, from the list of available images. You can also boot from an instance snapshot if any is available. (eg. "ubuntu-server-18.04-LTS-20200131.1")
@@ -42,12 +45,12 @@ For creating new instance do the following:
 - _Select storage type_:
   Select storage type "RBD" and provide preferred disc size
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus3.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus3.png)  
 
 - _Select a configuration_:
   Configurations (flavors) hold information about the Instance memory, disk space and the number of virtual CPUs that will be available. (eg. "VC-2")
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus4.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus4.png)  
 
 - _Network selection_:
   Select network (public or private)
@@ -56,19 +59,19 @@ For creating new instance do the following:
   A SSH key which you previously added in SSH keys page. Also, you can add your own key or generate a new one to use - cklick the button **Add a new key**, assign a name and click the button **Generate key**.
   This field is optional,you can leave none selected.
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus5.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus5.png)  
 
 - _Root Password_:
   You can view your typed password by clicking on the eye icon from right. The password should be at least 8 characters long and should contain at least one digit, letter or symbol.
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus55.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus55.png)  
 
 3. Hit **Create Instance** and the new instance will be created.
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus6.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus6.png)  
 
 **For example, see a quick recap**  
-![](../../assets/img/new-linux-vm-V/001.gif)
+![](../../assets/img/new-linux-vm-V/001.gif)  
 
 ## View instance details
 ---
@@ -86,14 +89,14 @@ Instance details area:
 - _Network_: Details about network (private and public IPs)
 - _Other_: Other details like instance unique number and instance data creation.
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus7.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus7.png)  
 
 ## Search for an instance
 ---
 
 To search for an instance, type your instance name in the search box from the top of the instance page.
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus8.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus8.png)  
 
 ## Start / Shutdown / Reboot instance
 ---
@@ -102,11 +105,11 @@ There are two ways in interface for **Start / Shutdown / Restart** your instance
 
 First one is directly from instance page. In each instance box, there is one icon for **Start/Shutdown** and one icon for **Restart**. See next image for reference:
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus9.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus9.png)  
 
 Second way is from instance details (click on the instance you want)and there you will find, in the top-right of the instance window, one icon for Start/Shutdown and one icon for Restart, as you can see below:
 
-![](../../assets/img/new-linux-vm-V/instances-Ventus10.png)
+![](../../assets/img/new-linux-vm-V/instances-Ventus10.png)  
 
 ## Login into console
 ---
@@ -153,7 +156,7 @@ On the next step select key to function as AltGr:
 And on the last step choose compose key:  
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_6.png)  
 
-Now your keyboard is configured and your `/etc/default/keyboard` file looks like below:
+Now your keyboard is configured and your `/etc/default/keyboard` file looks like below:  
 ![](../../assets/img/new-linux-vm-V/instances-Ventus-add_7.png)  
 
 ## Manage an instance

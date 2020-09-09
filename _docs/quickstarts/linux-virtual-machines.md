@@ -35,3 +35,12 @@ Then on the main *Navigation Panel* go to `Virtual Machines` and choose `Instanc
 
 
 On this page you can find all created Instances with their details area.  
+
+**Instances details area includes:**   
+`Name`: Shows the name of the Instances;  
+`Region`: Shows which regions the corresponding Instances belong to;      
+`IP`: Shows the public IP of the Instances;
+`Image`:
+`Flavor`:
+`Status`:
+`option list icon`: Opens a list of available management actions for the selected Instance.

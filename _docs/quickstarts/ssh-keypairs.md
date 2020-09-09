@@ -1,8 +1,8 @@
 ---
 title: SSH Keypairs
 description: How to generate and manage a new SSH Keypairs in Ventus Cloud Portal
-tags: [ featured, coretasks ]
-# permalink: /ssh-keys/
+tags: [ featured, quickstart ]
+# permalink: /ssh-keypairs/
 ---
 # SSH Keypairs 
 {: .no_toc }
@@ -35,15 +35,15 @@ Then on the main *Navigation Panel* go to `Virtual Machines` and choose `Keypair
 On this page you can find all created SSH Keypairs with their details area.  
 
 **Keypairs details area includes:**   
-`Name`: Shows the name for the Keypairs;    
-`Region`: Shows which region the corresponding key pairs belong to;    
+`Name`: Shows the name of the Keypairs;    
+`Region`: Shows which regions the corresponding Keypairs belong to;    
 `Fingerprint`: Shows each Public Key fingerprint which is a sequence of bytes used to identify a longer public key;  
-`option list icon`: Opens a list of available management actions for the selected Keypairs.  
+`option list icon`: Opens a list of available management actions for the selected Keypair.  
 ![](../../assets/img/ssh-key/ssh-key3.png)    
 
 ## Create a new SSH Keypair
 
-To create a new SSH Keypairs go to the *Keypairs page* and  click the `CREATE` icon in the the upper right corner.    
+To create a new SSH Keypair go to the *Keypairs page* and  click the `CREATE` icon in the the upper right corner.    
 ![](../../assets/img/ssh-key/ssh-key4.png)      
 
 *On the next page you need:*    
